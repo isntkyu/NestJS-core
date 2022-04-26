@@ -15,7 +15,7 @@
   - npm i @types/express -D
 
 - express middleware
-  - app.use로 만듦
+  - `app.use`로 만듦
   - app.get 등을 사용해서 만들 수 있음 , next를 넣으면된다.
   - 미들웨어를 찾기 전에 라우터를 발견하면 미들웨어를 거치지 않게됨.
   - 미들웨어를 사용하려면 순서와 용도가 중요
