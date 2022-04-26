@@ -33,3 +33,7 @@ app.use((req, res, next) => {
   - https://medium.com/nodejs-server/type-narrowing-ts-f62fc28f413f
   - try...catch(err) 에서 err 타입 unknown (app.ts)
   - if (error instanceof Error) {
+
+- patch api
+  - cat = { ...cat, ...body };
+  - `구조분해할당`
