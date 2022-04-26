@@ -35,5 +35,9 @@ app.use((req, res, next) => {
   - if (error instanceof Error) {
 
 - patch api
+
   - cat = { ...cat, ...body };
   - `구조분해할당`
+
+- single ton
+  - 하나의 클래스에 하나의 인스턴스(server) ( 메모리 절감 )
