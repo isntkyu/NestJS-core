@@ -1,6 +1,5 @@
 import catsRouter from "./cats/cats.route";
 import * as express from "express";
-import { runInThisContext } from "vm";
 
 class Server {
   public app: express.Application;

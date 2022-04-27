@@ -1,4 +1,4 @@
-import { Cat, CatType } from ".//cats.model"; //mock db
+import { Cat, CatType } from "./cats.model"; //mock db
 import { Request, Response } from "express";
 
 export const readAllcat = (req: Request, res: Response) => {

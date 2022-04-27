@@ -1,4 +1,4 @@
-import { Cat, CatType } from ".//cats.model"; //mock db
+import { Cat, CatType } from "./cats.model"; //mock db
 import { Router } from "express";
 import {
   createCat,
