@@ -2,6 +2,9 @@
 
 - module 의 export 속성: 은닉화 해제
 
+  "rootDir": "",
+  "baseUrl": "./nestjs-core",
+
 ---
 
 <p align="center">
