@@ -1,5 +1,7 @@
 - start
 
+- module 의 export 속성: 은닉화 해제
+
 ---
 
 <p align="center">
