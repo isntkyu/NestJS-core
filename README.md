@@ -5,6 +5,16 @@
 
 ---
 
+"scripts": {
+"start": "명령어 $INIT_CWD/index.js",
+},
+
+다만 위 스크립트는 \*nix-like 플랫폼, 즉, 리눅스, 맥 등에서만 작동합니다.
+
+윈도우에서는 $INIT_CWD 대신 %INIT_CWD%를 사용해주면 된다고 합니다. 테스트는 해보지 않았습니다. 혹시 해보신 분이 있으면 후기 부탁드립니다.
+
+---
+
 - javascript, json의 차이
 
   - json:

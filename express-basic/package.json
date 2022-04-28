@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "build": "tsc",
-    "start:dev": "tsc-watch --onSuccess \"node dist/app.js\"",
-    "prestart": "npm run build",
-    "start": "node dist/app.js"
+    "build:ex": "tsc",
+    "start:dev:ex": "tsc-watch --onSuccess \"node dist/app.js\"",
+    "prestart:ex": "npm run build",
+    "start:ex": "node dist/app.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
