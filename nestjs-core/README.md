@@ -32,6 +32,9 @@
   Exception filters (route, then controller, then global)
   Server response
 
+- class validation
+  app.useGlobalPipes(new ValidationPipe());
+
 ---
 
 <p align="center">
