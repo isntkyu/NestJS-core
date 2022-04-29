@@ -6,8 +6,31 @@
   "baseUrl": "./nestjs-core",
 
 - pipe
+
   - ParseIntPipe
   - 컨트롤러에서 데이터 유효성 검사 및 변환하여 서버가 원하는 데이터를 얻을 수 잇도록 도와주는 클래스
+
+- life cycle
+  Incoming request
+  Globally bound middleware
+  Module bound middleware
+  Global guards
+  Controller guards
+  Route guards
+  Global interceptors (pre-controller)
+  Controller interceptors (pre-controller)
+  Route interceptors (pre-controller)
+  Global pipes
+  Controller pipes
+  Route pipes
+  Route parameter pipes
+  Controller (method handler)
+  Service (if exists)
+  Route interceptor (post-request)
+  Controller interceptor (post-request)
+  Global interceptor (post-request)
+  Exception filters (route, then controller, then global)
+  Server response
 
 ---
 
