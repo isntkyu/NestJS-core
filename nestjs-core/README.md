@@ -5,6 +5,10 @@
   "rootDir": "",
   "baseUrl": "./nestjs-core",
 
+- pipe
+  - ParseIntPipe
+  - 컨트롤러에서 데이터 유효성 검사 및 변환하여 서버가 원하는 데이터를 얻을 수 잇도록 도와주는 클래스
+
 ---
 
 <p align="center">
