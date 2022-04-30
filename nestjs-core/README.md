@@ -35,6 +35,8 @@
 - class validation
   app.useGlobalPipes(new ValidationPipe());
 
+- virtual return (mongoose)
+
 ---
 
 <p align="center">

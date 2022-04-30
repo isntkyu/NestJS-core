@@ -1,3 +1,4 @@
 node_modules
 nestjs-core/node_modules
 nestjs-core/dist
+nestjs-core/.env
