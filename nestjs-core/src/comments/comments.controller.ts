@@ -1,5 +1,5 @@
 import { ApiOperation } from '@nestjs/swagger';
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Patch } from '@nestjs/common';
 import { CommentsService } from './comments.service';
 import { CommentsCreateDto } from './dtos/comments.create.dto';
 
@@ -29,7 +29,7 @@ export class CommentsController {
   @ApiOperation({
     summary: 'Like',
   })
-  @Post(':id')
+  @Patch(':id')
   async plusLike(@Param('id') id: string) {
     return this.commentsService.plusLike(id);
   }
