@@ -7,6 +7,7 @@ import { CatsService } from './cats.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Cat, CatSchema } from './cats.schema';
 import { MulterModule } from '@nestjs/platform-express';
+import { AwsService } from '../aws.service';
 
 @Module({
   imports: [
@@ -20,7 +21,7 @@ import { MulterModule } from '@nestjs/platform-express';
     }),
   ],
   controllers: [CatsController],
-  providers: [CatsService, CatsRepository],
+  providers: [CatsService, CatsRepository, AwsService],
   exports: [CatsService, CatsRepository],
 })
 export class CatsModule {}

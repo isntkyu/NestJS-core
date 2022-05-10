@@ -1,3 +1,4 @@
+import { AwsService } from './../aws.service';
 import { JwtAuthGuard } from './../auth/jwt/jwt.guard';
 import { LoginRequestDto } from './../auth/dto/login.request.dto';
 import { AuthService } from './../auth/auth.service';
@@ -37,6 +38,7 @@ export class CatsController {
   constructor(
     private readonly catsService: CatsService,
     private readonly authService: AuthService,
+    private readonly awsService: AwsService,
   ) {}
 
   @ApiOperation({ summary: '현재 고양이 가져오기' })
@@ -75,14 +77,15 @@ export class CatsController {
   }
 
   @ApiOperation({ summary: '고양이 이미지 업로드' })
-  @UseInterceptors(FilesInterceptor('image', 10, multerOptions('cats')))
+  // @UseInterceptors(FilesInterceptor('image', 10, multerOptions('cats')))
+  @UseInterceptors(FileInterceptor('image'))
   @UseGuards(JwtAuthGuard)
   @Post('upload')
-  uploadCatImg(
-    @UploadedFiles() files: Array<Express.Multer.File>,
+  async uploadCatImg(
+    @UploadedFile() file: Express.Multer.File,
     @CurrentUser() cat,
   ) {
-    return this.catsService.uploadImg(cat, files);
+    return await this.awsService.uploadFileToS3('cat', file);
   }
 
   @ApiOperation({ summary: '모든 고양이 가져오기' })
