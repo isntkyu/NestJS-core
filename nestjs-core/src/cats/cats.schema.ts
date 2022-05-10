@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, SchemaOptions } from 'mongoose';
 import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
-import { Comments } from 'src/comments/comments.schema';
+import { Comments } from '../comments/comments.schema';
 
 const options: SchemaOptions = {
   timestamps: true,
